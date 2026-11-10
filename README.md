@@ -5,16 +5,17 @@
 <p align="center">
   <img alt="Flutter" src="https://img.shields.io/badge/Flutter-Dart%203.13-02569B?logo=flutter&logoColor=white">
   <img alt="Platform" src="https://img.shields.io/badge/Platform-Android%20(arm64--v8a)-3DDC84?logo=android&logoColor=white">
-  <img alt="Engine" src="https://img.shields.io/badge/Motor-yt--dlp%20%2B%20FFmpeg%200.18.1-0f766e">
-  <img alt="Architecture" src="https://img.shields.io/badge/Mimari-WorkManager%20%2B%20Riverpod-006A6A">
+  <img alt="Version" src="https://img.shields.io/badge/S%C3%BCr%C3%BCm-v1.1.0%2B2-006A6A">
+  <img alt="Engine" src="https://img.shields.io/badge/Motor-yt--dlp%202026.10.26%20%2B%20FFmpeg%200.18.1-0f766e">
 </p>
 
 # Medya İndirici
 
 **Medya İndirici**, Android cihazlarda bulunduğunuz uygulamadan çıkmadan **Paylaş → Medya İndirici** akışıyla video, ses (MP3) ve görselleri arka planda indirip doğrudan Android **Galeri**'ye (`MediaStore`) kaydeden, tamamen cihaz içi (**sunucusuz**) bir medya indirme uygulamasıdır.
 
-- ⚡ **Sıfır Ekran Kesintisi (`ShareReceiverActivity`):** YouTube, Instagram, X (Twitter), TikTok veya tarayıcıda *Paylaş* menüsünden seçildiğinde arayüz açmadan bağlantıyı yakalar, indirmeyi arka plan kuyruğuna ekler ve anında kapanır.
-- 🎬 **Cihaz İçi `yt-dlp` + `FFmpeg` Motoru:** Harici bir API veya ara sunucu kullanmaz. Yüksek çözünürlüklü ayrı video ve ses akışlarını (`bv*+ba/b`) cihaz üzerinde FFmpeg ile birleştirir veya doğrudan MP3 ses dosyasına dönüştürür.
+- ⚡ **Sıfır Ekran Kesintisi (`ShareReceiverActivity` + Expedited WorkManager):** YouTube, Instagram, X (Twitter), TikTok veya tarayıcıda *Paylaş* menüsünden seçildiğinde arayüz açmadan bağlantıyı yakalar, `OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST` ile gecikmesiz arka plan kuyruğuna ekler ve anında kapanır.
+- 🚀 **Gömülü `yt-dlp 2026.10.26` + Hızlı YouTube Profili (`visionos`):** Güncel `yt-dlp` ikili dosyası (`res/raw/ytdlp`) uygulama içinde gömülü gelir. YouTube bağlantılarında `player_client=visionos` ve `--concurrent-fragments 4` ile JS imza çözme gecikmesine takılmadan doğrudan yüksek hızlı H.264/MP4 akışlarını indirir; 403/imza hatasında otomatik yedek profil ve `NIGHTLY` motor güncellemesi devreye girer.
+- 🧠 **Akıllı Video / Görsel Ayrımı ve X (Twitter) Syndication Çözümleyici:** Video platformlarında (`YouTube`, `Instagram Reels`, `TikTok`, `Vimeo`, `Twitch` vb.) video indirilemediğinde yanlışlıkla kapak fotoğrafının (`og:image`) indirilmesini kesin olarak engeller. X/Twitter bağlantılarında Syndication API üzerinden en yüksek bit hızlı MP4 videoyu veya çoklu fotoğrafları (`?name=orig`) doğrudan çeker.
 - 📂 **Atomik Galeri Kaydı (`MediaStore`):** İndirilen dosyalar türüne göre otomatik sınıflandırılır ve `IS_PENDING=1 → 0` atomik protokolüyle bozuk/yarım dosya oluşmadan doğrudan Galeri'de görünür:
   - **Video:** `Movies/MedyaIndirici`
   - **Görsel:** `Pictures/MedyaIndirici`
