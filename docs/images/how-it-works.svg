@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+  <rect width="1200" height="280" rx="20" fill="#071E1E" />
+
+  <!-- Step 1 -->
+  <g transform="translate(32, 32)">
+    <rect x="0" y="0" width="256" height="216" rx="16" fill="#0D3130" stroke="#2DD4BF" stroke-opacity="0.35" />
+    <circle cx="38" cy="38" r="18" fill="#14B8A6" />
+    <text x="38" y="44" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="800" fill="#042F2E">1</text>
+    <text x="68" y="44" font-family="Segoe UI, Roboto, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">Paylaş'a Dokun</text>
+    <text x="20" y="84" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">YouTube, Instagram, X, TikTok</text>
+    <text x="20" y="106" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">veya tarayıcıda "Paylaş"</text>
+    <text x="20" y="128" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">menüsünden Medya İndirici'yi</text>
+    <text x="20" y="150" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">seçin.</text>
+    <rect x="20" y="170" width="216" height="28" rx="8" fill="#072221" />
+    <text x="128" y="189" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#5EEAD4">ACTION_SEND (text/plain)</text>
+  </g>
+
+  <!-- Arrow 1->2 -->
+  <path d="M296 140 H316 M310 134 L318 140 L310 146" stroke="#4FD8D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Step 2 -->
+  <g transform="translate(324, 32)">
+    <rect x="0" y="0" width="256" height="216" rx="16" fill="#0D3130" stroke="#2DD4BF" stroke-opacity="0.35" />
+    <circle cx="38" cy="38" r="18" fill="#14B8A6" />
+    <text x="38" y="44" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="800" fill="#042F2E">2</text>
+    <text x="68" y="44" font-family="Segoe UI, Roboto, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">Şeffaf Yakalama</text>
+    <text x="20" y="84" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">ShareReceiverActivity arayüz</text>
+    <text x="20" y="106" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">açmadan URL'yi ayıklar, işi</text>
+    <text x="20" y="128" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">kuyruğa alır ve anında kapanır.</text>
+    <text x="20" y="150" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">Gezinmeniz hiç bölünmez.</text>
+    <rect x="20" y="170" width="216" height="28" rx="8" fill="#072221" />
+    <text x="128" y="189" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#5EEAD4">TransparentTheme + finish()</text>
+  </g>
+
+  <!-- Arrow 2->3 -->
+  <path d="M588 140 H608 M602 134 L610 140 L602 146" stroke="#4FD8D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Step 3 -->
+  <g transform="translate(616, 32)">
+    <rect x="0" y="0" width="256" height="216" rx="16" fill="#0D3130" stroke="#2DD4BF" stroke-opacity="0.35" />
+    <circle cx="38" cy="38" r="18" fill="#14B8A6" />
+    <text x="38" y="44" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="800" fill="#042F2E">3</text>
+    <text x="68" y="44" font-family="Segoe UI, Roboto, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">yt-dlp &amp; FFmpeg</text>
+    <text x="20" y="84" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">WorkManager Foreground Service</text>
+    <text x="20" y="106" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">üzerinde yt-dlp akışı indirir,</text>
+    <text x="20" y="128" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">FFmpeg ses/video birleştirir</text>
+    <text x="20" y="150" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">veya MP3'e dönüştürür.</text>
+    <rect x="20" y="170" width="216" height="28" rx="8" fill="#072221" />
+    <text x="128" y="189" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#5EEAD4">CoroutineWorker + dataSync</text>
+  </g>
+
+  <!-- Arrow 3->4 -->
+  <path d="M880 140 H900 M894 134 L902 140 L894 146" stroke="#4FD8D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Step 4 -->
+  <g transform="translate(908, 32)">
+    <rect x="0" y="0" width="260" height="216" rx="16" fill="#0D3130" stroke="#2DD4BF" stroke-opacity="0.35" />
+    <circle cx="38" cy="38" r="18" fill="#14B8A6" />
+    <text x="38" y="44" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="800" fill="#042F2E">4</text>
+    <text x="68" y="44" font-family="Segoe UI, Roboto, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">Galeriye Atomik Kayıt</text>
+    <text x="20" y="84" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">MediaStore API ile dosya türüne</text>
+    <text x="20" y="106" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">göre Movies, Pictures veya</text>
+    <text x="20" y="128" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">Music altına kaydedilir ve</text>
+    <text x="20" y="150" font-family="Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#CCFBF1">"AÇ" bildirimi gösterilir.</text>
+    <rect x="20" y="170" width="220" height="28" rx="8" fill="#072221" />
+    <text x="130" y="189" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#5EEAD4">IS_PENDING=1 → 0 (Scoped)</text>
+  </g>
+</svg>

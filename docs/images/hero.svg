@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041F1E" />
+      <stop offset="50%" stop-color="#073634" />
+      <stop offset="100%" stop-color="#0B4F4C" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FD8D8" />
+      <stop offset="100%" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F3E3C" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#072524" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="24" fill="url(#bgGrad)" />
+
+  <!-- Decorative Grid / Glow -->
+  <circle cx="1020" cy="90" r="220" fill="#2DD4BF" opacity="0.08" />
+  <circle cx="140" cy="360" r="180" fill="#4FD8D8" opacity="0.06" />
+
+  <!-- Left Content -->
+  <g transform="translate(64, 68)">
+    <rect x="0" y="0" width="268" height="34" rx="17" fill="#0F4C4A" stroke="#2DD4BF" stroke-opacity="0.4" />
+    <circle cx="20" cy="17" r="5" fill="#4FD8D8" />
+    <text x="34" y="22" font-family="Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" fill="#A7F3D0">
+      CİHAZ İÇİ YT-DLP + FFMPEG MOTORU
+    </text>
+
+    <text x="0" y="96" font-family="Segoe UI, Roboto, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      Medya İndirici
+    </text>
+
+    <text x="0" y="142" font-family="Segoe UI, Roboto, sans-serif" font-size="21" font-weight="400" fill="#CCFBF1">
+      Uygulamadan çıkmadan <tspan fill="#4FD8D8" font-weight="700">Paylaş → İndir</tspan> ile video, ses ve görselleri
+    </text>
+    <text x="0" y="172" font-family="Segoe UI, Roboto, sans-serif" font-size="21" font-weight="400" fill="#CCFBF1">
+      arka planda doğrudan Android Galeri'ye kaydedin.
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 212)">
+      <rect x="0" y="0" width="175" height="42" rx="12" fill="#092D2C" stroke="#2DD4BF" stroke-opacity="0.35" />
+      <text x="87" y="26" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" fill="#E6FFFA">
+        ⚡ Sıfır Ekran Kesintisi
+      </text>
+
+      <rect x="190" y="0" width="185" height="42" rx="12" fill="#092D2C" stroke="#2DD4BF" stroke-opacity="0.35" />
+      <text x="282" y="26" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" fill="#E6FFFA">
+        🎬 4K Video + Ses Birleştirme
+      </text>
+
+      <rect x="390" y="0" width="175" height="42" rx="12" fill="#092D2C" stroke="#2DD4BF" stroke-opacity="0.35" />
+      <text x="477" y="26" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" fill="#E6FFFA">
+        🔒 %100 Sunucusuz
+      </text>
+    </g>
+
+    <text x="0" y="286" font-family="Segoe UI, Roboto, monospace" font-size="13" fill="#5EEAD4" opacity="0.85">
+      Flutter 3 • Riverpod • Kotlin WorkManager • youtubedl-android 0.18.1 • MediaStore API
+    </text>
+  </g>
+
+  <!-- Right Floating Card Preview -->
+  <g transform="translate(730, 52)" filter="url(#shadow)">
+    <rect x="0" y="0" width="406" height="316" rx="22" fill="url(#cardGrad)" stroke="#4FD8D8" stroke-opacity="0.35" stroke-width="1.5" />
+
+    <!-- Notification Header -->
+    <rect x="24" y="24" width="358" height="78" rx="14" fill="#0A2E2D" stroke="#2DD4BF" stroke-opacity="0.3" />
+    <circle cx="54" cy="63" r="18" fill="#115E59" />
+    <path d="M54 53 v14 M48 61 l6 6 l6 -6 M46 71 h16" stroke="#4FD8D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="84" y="52" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">
+      4K Doğa Belgeseli — Karadeniz Yaylaları
+    </text>
+    <text x="84" y="72" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#99F6E4">
+      %68.4 • 14sn kaldı • En İyi Kalite (bv*+ba)
+    </text>
+    <rect x="84" y="82" width="278" height="6" rx="3" fill="#134E4A" />
+    <rect x="84" y="82" width="190" height="6" rx="3" fill="url(#accentGrad)" />
+
+    <!-- Completed Card -->
+    <rect x="24" y="118" width="358" height="84" rx="14" fill="#0A2E2D" stroke="#10B981" stroke-opacity="0.45" />
+    <circle cx="54" cy="160" r="18" fill="#064E3B" />
+    <path d="M47 160 l5 5 l10 -10" stroke="#34D399" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="84" y="148" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">
+      İndirildi: İstanbul Boğazı Timelapse.mp4
+    </text>
+    <text x="84" y="168" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#A7F3D0">
+      Movies/MedyaIndirici • Galeriye Kaydedildi
+    </text>
+    <rect x="304" y="144" width="62" height="30" rx="8" fill="#10B981" />
+    <text x="335" y="164" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" fill="#042F2E">
+      AÇ
+    </text>
+
+    <!-- Bottom Media Type Badges -->
+    <g transform="translate(24, 222)">
+      <rect x="0" y="0" width="112" height="68" rx="12" fill="#082221" stroke="#2DD4BF" stroke-opacity="0.2" />
+      <text x="56" y="30" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#4FD8D8">VIDEO</text>
+      <text x="56" y="50" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="11" fill="#99F6E4">Movies/</text>
+
+      <rect x="123" y="0" width="112" height="68" rx="12" fill="#082221" stroke="#2DD4BF" stroke-opacity="0.2" />
+      <text x="179" y="30" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#4FD8D8">SES (MP3)</text>
+      <text x="179" y="50" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="11" fill="#99F6E4">Music/</text>
+
+      <rect x="246" y="0" width="112" height="68" rx="12" fill="#082221" stroke="#2DD4BF" stroke-opacity="0.2" />
+      <text x="302" y="30" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#4FD8D8">GÖRSEL</text>
+      <text x="302" y="50" text-anchor="middle" font-family="Segoe UI, Roboto, sans-serif" font-size="11" fill="#99F6E4">Pictures/</text>
+    </g>
+  </g>
+</svg>

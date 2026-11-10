@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="100%" height="100%">
+  <rect width="1200" height="440" rx="20" fill="#071E1E" />
+
+  <!-- Flutter UI Layer -->
+  <g transform="translate(40, 36)">
+    <rect x="0" y="0" width="460" height="368" rx="18" fill="#0B2E2D" stroke="#4FD8D8" stroke-opacity="0.4" stroke-width="1.5" />
+    <text x="28" y="38" font-family="Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" fill="#4FD8D8">
+      FLUTTER KATMANI (Dart 3 + Riverpod)
+    </text>
+
+    <rect x="24" y="58" width="412" height="76" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="44" y="84" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">UI Ekranları (Material 3)</text>
+    <text x="44" y="106" font-family="Segoe UI, Roboto, monospace" font-size="12" fill="#99F6E4">HomeScreen • HistoryScreen • SettingsScreen</text>
+    <text x="44" y="124" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#A7F3D0">Canlı ilerleme çubuğu, filtreleme, Snackbar AÇ / TEKRAR DENE</text>
+
+    <rect x="24" y="152" width="412" height="88" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="44" y="178" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">State Management (flutter_riverpod)</text>
+    <text x="44" y="200" font-family="Segoe UI, Roboto, monospace" font-size="12" fill="#99F6E4">DownloadsNotifier • SettingsNotifier • SystemStatusNotifier</text>
+    <text x="44" y="220" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#A7F3D0">Aktif kuyruk ve geçmiş senkronizasyonu, mükerrer URL kontrolü</text>
+
+    <rect x="24" y="258" width="412" height="84" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="44" y="284" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Platform Köprüsü (DownloadChannel)</text>
+    <text x="44" y="306" font-family="Segoe UI, Roboto, monospace" font-size="12" fill="#5EEAD4">MethodChannel: com.ismail.medya_indirici/commands</text>
+    <text x="44" y="326" font-family="Segoe UI, Roboto, monospace" font-size="12" fill="#5EEAD4">EventChannel : com.ismail.medya_indirici/progress</text>
+  </g>
+
+  <!-- Bidirectional IPC Arrows -->
+  <g transform="translate(508, 175)">
+    <path d="M8 20 H96 M88 14 L98 20 L88 26" stroke="#4FD8D8" stroke-width="2.5" fill="none" />
+    <text x="52" y="10" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11" fill="#99F6E4">Komutlar</text>
+
+    <path d="M96 65 H8 M16 59 L6 65 L16 71" stroke="#34D399" stroke-width="2.5" fill="none" />
+    <text x="52" y="86" text-anchor="middle" font-family="Segoe UI, Roboto, monospace" font-size="11" fill="#A7F3D0">Canlı Event</text>
+  </g>
+
+  <!-- Android Native Layer -->
+  <g transform="translate(612, 36)">
+    <rect x="0" y="0" width="548" height="368" rx="18" fill="#0B2E2D" stroke="#34D399" stroke-opacity="0.4" stroke-width="1.5" />
+    <text x="28" y="38" font-family="Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" fill="#34D399">
+      ANDROID NATIVE KATMANI (Kotlin + WorkManager)
+    </text>
+
+    <rect x="24" y="58" width="242" height="86" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="40" y="82" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">ShareReceiverActivity</text>
+    <text x="40" y="102" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#CCFBF1">ACTION_SEND yakalar,</text>
+    <text x="40" y="120" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#CCFBF1">UI açmadan kuyruğa ekler</text>
+
+    <rect x="282" y="58" width="242" height="86" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="298" y="82" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">MainActivity &amp; RetryReceiver</text>
+    <text x="298" y="102" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#CCFBF1">Method/EventChannel yönetimi,</text>
+    <text x="298" y="120" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#CCFBF1">bildirimden İptal / Tekrar Dene</text>
+
+    <rect x="24" y="160" width="500" height="96" rx="12" fill="#072221" stroke="#34D399" stroke-opacity="0.4" />
+    <text x="44" y="186" font-family="Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#4FD8D8">DownloadWorker (CoroutineWorker + ForegroundService)</text>
+    <text x="44" y="208" font-family="Segoe UI, Roboto, monospace" font-size="12" fill="#FFFFFF">youtubedl-android 0.18.1 + FFmpeg 0.18.1 + HTTP Fallback</text>
+    <text x="44" y="230" font-family="Segoe UI, Roboto, sans-serif" font-size="12" fill="#A7F3D0">Format seçimi (bv*+ba/b, 720p, MP3), cookies.txt desteği, üstel backoff retry</text>
+
+    <rect x="24" y="272" width="242" height="74" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="40" y="296" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">MediaStoreSaver</text>
+    <text x="40" y="316" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#99F6E4">Movies / Pictures / Music</text>
+    <text x="40" y="334" font-family="Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#A7F3D0">IS_PENDING atomik kayıt</text>
+
+    <rect x="282" y="272" width="242" height="74" rx="12" fill="#072221" stroke="#2DD4BF" stroke-opacity="0.25" />
+    <text x="298" y="296" font-family="Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">HistoryStorage &amp; Notification</text>
+    <text x="298" y="316" font-family="Segoe UI, Roboto, monospace" font-size="11.5" fill="#99F6E4">SharedPreferences JSON</text>
+    <text x="298" y="334" font-family="Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#A7F3D0">Canlı bildirim &amp; AÇ / RETRY</text>
+  </g>
+</svg>
